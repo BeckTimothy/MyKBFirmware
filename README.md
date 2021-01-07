@@ -8,7 +8,7 @@ This software is for my Plank and Levinson 40% keyboards I'm using for on-the-go
 
 To modify my firmware merge my qmk_firmware folder into yours and make any necessary edits to the files provided
 
-To flash my firmware onto your device download the provided hex or bin in this repos root directory and follow the qmk toolbox's docs, otherwise merge the qmk_firmware directory into yours and follow the QMK CLI docs.
+To flash my firmware onto your device download the provided bin in the qmk_firmware directory and follow the qmk toolbox's docs, otherwise merge the qmk_firmware directory into yours and follow the QMK CLI docs and run "qmk compile -kb planck/rev6 -km timortho"
 
 To preview my firmware layout use the provided json, or view it here, or look at the images below.
 
