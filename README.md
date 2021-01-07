@@ -1,5 +1,7 @@
 # 40% Keeb Firmware
 
+![Planck keyboard](/img/planck.jpg)
+---
 If you'd like to get started developing your own keyboard firmware check out the QMK documentation.
 
 QMK docs: https://docs.qmk.fm/#/newbs_getting_started
@@ -19,3 +21,5 @@ To flash my firmware onto your device you can:
 To preview my firmware layout use the provided json on the [qmk configurator](https://config.qmk.fm/#/planck/rev6/LAYOUT_planck_grid), or view the c here, or look at the images below.
 
 Images to be provided at a later date. LOL
+
+
