@@ -41,6 +41,9 @@ contains a num row with shiftable symbols along the top row. Home row contains m
 ## Layer 5
 is Plover layout, a layout for stenographers. I have no intention of using this or changing it as I haven't needed it yet.
 
+## Layer 6
+contains a ton of qmk specific scripts that modifie hardware features this is for the most part unchanged from the rev6 firmware with the exception of the added fkeys along the border of the keymap.
+
 ![Planck keyboard layer 6](/img/planckLayer6.PNG)
 
 
