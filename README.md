@@ -21,15 +21,15 @@ To flash my firmware onto your device you can:
 To preview my firmware layout use the provided json on the [qmk configurator](https://config.qmk.fm/#/planck/rev6/LAYOUT_planck_grid), or view the [keymap.c here,](/qmk_firmware/keyboards/planck/keymaps/timortho/keymap.c) or look at the images below.
 
 ## Layer 0 
-is a standard QWERTY layout. the Raise and Lower keys shift layers to layer 4 and 3 respectively
+is a standard QWERTY layout. The Raise and Lower keys shift layers to layer 4 and 3, respectively.
 
 ![Planck keyboard layer 0](/img/planckLayer0.PNG)
 
 ## Layers 1 and 2 
-are Colemak and Dvorak, alternative layouts to QWERTY.
+are Colemak and Dvorak, alternative layouts to QWERTY. You can swap your defualt layer between layers 0, 1, and 2 on layer 6.
 
 ## Layer 3
-contains a num bar across the top and fkeys in the lower left. After my mods to layer 4 I don't have much use for this layer so I may change it to a num pad layer or a layer holding boiler plate scripts.
+contains F-keys in the lower left and a num pad on the right, I'm working on adding PHP Class and API boilerplating scripts to the top row.
 
 ![Planck keyboard layer 3](/img/planckLayer3.PNG)
 
@@ -38,11 +38,29 @@ contains a num row with shiftable symbols along the top row. Home row contains m
 
 ![Planck keyboard layer 4](/img/planckLayer4.PNG)
 
+Example of reverse shifted curly/square brace macro:
+```$xslt 
+case RV_LBRC:
+    	  if (record->event.pressed) {
+    	    if (get_mods() & MOD_MASK_SHIFT) { // act as left square bracket if shift is pressed
+    	        del_mods(MOD_MASK_SHIFT);
+    	        register_code(KC_LBRACKET);
+    	        unregister_code(KC_LBRACKET);
+    	        register_code(KC_LSFT); //This works because all shift keys on Planck are programmed to be left shift
+             } else { // otherwise act as left curly brace
+               register_code16(KC_LEFT_CURLY_BRACE);
+               unregister_code16(KC_LEFT_CURLY_BRACE);
+             }
+         }
+         return false;
+         break;
+```
+
 ## Layer 5
 is Plover layout, a layout for stenographers. I have no intention of using this or changing it as I haven't needed it yet.
 
 ## Layer 6
-contains a ton of qmk specific scripts that modifie hardware features this is for the most part unchanged from the rev6 firmware with the exception of the added fkeys along the border of the keymap.
+contains qmk specific scripts that modify hardware features. This is for the most part unchanged from the rev6 firmware with the exception of the added F-keys along the border of the keymap, this aren't mod friendly, mod friendly F-keys van be found in layer 3.
 
 ![Planck keyboard layer 6](/img/planckLayer6.PNG)
 
