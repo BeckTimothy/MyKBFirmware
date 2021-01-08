@@ -9,7 +9,7 @@ QMK docs: https://docs.qmk.fm/#/newbs_getting_started
 ---
 
 
-This software is for my Plank 40% keyboard I'm using for on-the-go Web development. I prefer to have my symbols on my home row and I use curly braces more than square brackets so I'm swapping their shifted state as well as adding useful niche macros for templating projects.
+This keymap firmware is developed by [Timothy Beck,](https://github.com/BeckTimothy) for the Plank 40% keyboard, for on-the-go Web development within the PhpStorm IDE. I prefer to have my symbols on my home row and I use curly braces more than square brackets so I'm swapping their shifted state as well as adding useful niche macros for templating projects. I've also swapped the debounce mode to per-key to allow less chance of a kind of 'blocking' under rare circumstances when two keys are pressed within 5ms of each other and increased the polling rate to 1000 tps instead of the default 125 preventing another type of rare 'blocking' when keys are pressed within 8ms of each other, blech.
 
 To modify my firmware merge my qmk_firmware folder into yours and make any necessary edits to the files provided
 
@@ -26,7 +26,7 @@ is a standard QWERTY layout. The Raise and Lower keys shift layers to layer 4 an
 ![Planck keyboard layer 0](/img/planckLayer0.PNG)
 
 ## Layers 1 and 2 
-are Colemak and Dvorak, alternative layouts to QWERTY. You can swap your defualt layer between layers 0, 1, and 2 on layer 6.
+are Colemak and Dvorak, alternative layouts to QWERTY. You can swap your default layer between layers 0, 1, and 2 on layer 6.
 
 ## Layer 3
 contains F-keys in the lower left and a num pad on the right, I'm working on adding PHP Class and API boilerplating scripts to the top row.
