@@ -9,7 +9,7 @@ QMK docs: https://docs.qmk.fm/#/newbs_getting_started
 ---
 
 
-This software is for my Plank and Levinson 40% keyboards I'm using for on-the-go software development. I prefer to have my symbols on my home row and I use curly braces more than square brackets so I'm swapping their shifted state.
+This software is for my Plank 40% keyboard I'm using for on-the-go Web development. I prefer to have my symbols on my home row and I use curly braces more than square brackets so I'm swapping their shifted state as well as adding useful niche macros for templating projects.
 
 To modify my firmware merge my qmk_firmware folder into yours and make any necessary edits to the files provided
 
