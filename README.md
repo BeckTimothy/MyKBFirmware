@@ -2,10 +2,13 @@
 
 ![Planck keyboard](/img/planck.jpg)
 ---
-If you'd like to get started developing your own keyboard firmware check out the QMK documentation.
+If you'd like to get started developing your own keyboard firmware check out the [QMK documentation](https://docs.qmk.fm/#/newbs_getting_started).
 
-QMK docs: https://docs.qmk.fm/#/newbs_getting_started
-
+**Keymap Maintainer:** [Timothy Beck](https://github.com/BeckTimothy)     
+**Hardware Supported:** Planck PCB w/ STM32F303CB cortex-M4  128Kb       
+    (this was designed for planck rev6 but should work with any planck with enough flash mem.. all of them?)    
+**Firmware Size:** 58,764 bytes of 128,000 bytes available     
+**Hardware Availability:** [OLKB.com](https://olkb.com), [Massdrop](https://www.massdrop.com/buy/planck-mechanical-keyboard?mode=guest_open), [Ergodox (Planck EZ)](https://ergodox-ez.com/pages/planck)
 ---
 
 
